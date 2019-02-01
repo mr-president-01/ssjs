@@ -35,7 +35,7 @@ function solveQuadrEq(a, b, c) {
         return 'The equation has no solution!';
     }
     const res1 = ((-b + Math.sqrt(diskr)) / 2 * a).toFixed(2);
-    const res2 = ((-b + Math.sqrt(diskr)) / 2 * a).toFixed(2);
+    const res2 = ((-b - Math.sqrt(diskr)) / 2 * a).toFixed(2);
     if (diskr == 0) {
         return 'x =' + res1;
     } else {
