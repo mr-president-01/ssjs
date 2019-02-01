@@ -29,17 +29,18 @@ const a = parseFloat(prompt('Enter A'));
 const b = parseFloat(prompt('Enter B'));
 const c = parseFloat(prompt('Enter C'));
 
-function solveQuadrEq(a,b,c){
-    const diskr = b*b-4*a*c;
-    if(diskr<0){
+function solveQuadrEq(a, b, c) {
+    const diskr = b * b - 4 * a * c;
+    if (diskr < 0) {
         return 'The equation has no solution!';
     }
-    const res1 = ((-b+Math.sqrt(diskr))/2*a).toFixed(2);
-    const res2 = ((-b+Math.sqrt(diskr))/2*a).toFixed(2);
-    if(diskr==0){
-        return 'x ='+res1;
+    const res1 = ((-b + Math.sqrt(diskr)) / 2 * a).toFixed(2);
+    const res2 = ((-b + Math.sqrt(diskr)) / 2 * a).toFixed(2);
+    if (diskr == 0) {
+        return 'x =' + res1;
+    } else {
+        return 'x1 = ' + res1 + ', x2 =' + res2;
     }
-    return 'x1 = '+res1+', x2 ='+res2;
 }
 
-alert(solveQuadrEq(a,b,c));
+alert(solveQuadrEq(a, b, c));
