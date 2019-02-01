@@ -40,7 +40,7 @@ function solveQuadrEq(a, b, c) {
         return 'x =' + res1;
     } else {
         return 'x1 = ' + res1 + ', x2 =' + res2;
-    }
+    };
 }
 
 alert(solveQuadrEq(a, b, c));
