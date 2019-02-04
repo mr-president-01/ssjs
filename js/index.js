@@ -2,7 +2,7 @@ const n = parseFloat(prompt('Enter a serial number of fibonacci'));
 
 // cycle
 
-// function fiboCycle(n){
+// function fiboLoop(n){
 //     let first = 1;
 //     let second =1;
 //     for (let i = 3; i <= n; i++){
@@ -12,7 +12,7 @@ const n = parseFloat(prompt('Enter a serial number of fibonacci'));
 //     }
 //     return second;
 // };
-// alert(fibo(n));
+// alert(fiboLoop(n));
 
 // recursion 
 
